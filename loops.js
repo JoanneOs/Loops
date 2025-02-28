@@ -23,6 +23,8 @@ for (let i = 1; i <= 100; i++) {
 
 
 //Part 2: Prime Time
+
+/*
 let x=4; //we can change this input
 let y=x+1;
 
@@ -44,3 +46,14 @@ while(true){let z=true;
 //if z still true then y is a prime
 if(z){console.log("next prime number = "+y);break;}y++;}
 }
+*////stoping loop going to part3
+
+//Part 3: Feeling Loopy
+
+//givings string
+let csv="ID,Name,Occupation,Age42,Bruce,Knight,4157,Bob,Fry Cook,1963,Blaine,Quiz Master,5898,Bill,Doctor’s Assistant,26";
+let row1=" ";
+let row2=" ";
+let row3=" ";
+let row4=" ";
+let row5=" ";
