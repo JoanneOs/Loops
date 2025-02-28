@@ -20,3 +20,9 @@ for (let i = 1; i <= 100; i++) {
     console.log(i);
   }
 }
+
+
+//Part 2: Prime Time
+let x=4; //we can change this input
+let y=x+1;
+let prim=false;//false is prime number
