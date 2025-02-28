@@ -25,4 +25,11 @@ for (let i = 1; i <= 100; i++) {
 //Part 2: Prime Time
 let x=4; //we can change this input
 let y=x+1;
-let prim=false;//false is prime number
+
+//false is prime number//
+//wile number is not fulse
+while(true){let z=true,
+    for (let r=2;r<y,r++){if(y%i==0){z=false;
+        //need break
+    }}
+}
