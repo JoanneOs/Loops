@@ -50,48 +50,53 @@ if(z){console.log("next prime number = "+y);break;}y++;}
 //Part 3: Feeling Loopy
 
 //givings string
-/
-let csv =
-  "ID,Name,Occupation,Age42,Bruce,Knight,4157,Bob,Fry Cook,1963,Blaine,Quiz Master,5898,Bill,Doctor’s Assistant,26";
-let row1 = " ";
-let row2 = " ";
-let row3 = " ";
-let row4 = " ";
-let row5 = " ";
-let cellnumber = 0;
+
+let csv ="ID,Name,Occupation,Age\n42"//,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26";
+// let row1 = " ";
+// let row2 = " ";
+// let row3 = " ";
+// let row4 = " ";
+// let row5 = " ";
+// let cellnumber = 0;
+let cell=''
 
 //loop as long length of csv is more than m, to print it, until we get to ,
 for (let m = 0; m < csv.length; m++) {
   let iscoma = csv.charAt(m);
-  while(iscoma!==" ")
-    {
-  if (iscoma !== "\") {console.log(iscoma); iscoma++;}
-  }
-  //  cellnumber++;
-
-    /*
-    if (iscoma === 1) {
-      row2 = row1;
-    } else if (iscoma === 2) {
-      row3 = row1;
-    } else if (iscoma === 3) {
-      row4 = row1;
-    }
-
-    //console.log("row1"+row1+ "raw1");  // didn;t print
-
-    row1 = ""; //restart new row
+ // while(iscoma!==" ")
     
-  } else if (csv === "/n") {
-    row5 = row1;
-    //   console.log(row1,row2,row3,row4,row5)
-    row2 = row3 = row4 = row5; //to reset
-    iscoma = 0;
-    // console.log(row1);
-    row1 = ""; //to clear
-  } else {
-    row1 = row1 + csv;
-  }
-}
-//console.log(row1)//,row2,row3,row4,row5)
-*/
+  //if (iscoma !== '\') 
+//   do{console.log(iscoma); iscoma++;}
+//   while(iscoma!='/')
+//   }
+    
+
+if (m===','||c==='\'') console.log(cell);
+cell='';}esle{cell+=c;}}
+//   //  cellnumber++;
+
+//     /*
+//     if (iscoma === 1) {
+//       row2 = row1;
+//     } else if (iscoma === 2) {
+//       row3 = row1;
+//     } else if (iscoma === 3) {
+//       row4 = row1;
+//     }
+
+//     //console.log("row1"+row1+ "raw1");  // didn;t print
+
+//     row1 = ""; //restart new row
+    
+//   } else if (csv === "/n") {
+//     row5 = row1;
+//     //   console.log(row1,row2,row3,row4,row5)
+//     row2 = row3 = row4 = row5; //to reset
+//     iscoma = 0;
+//     // console.log(row1);
+//     row1 = ""; //to clear
+//   } else {
+//     row1 = row1 + csv;
+//   }
+// }
+// //console.log(row1)//,row2,row3,row4,row5)
