@@ -12,15 +12,14 @@ for (let i = 1; i <= 100; i++) {
   //console.log("If a number is divisible by 3, log “Fizz.");
   if (i % 3 == 0) {
     console.log(" fizz");
-  }else if (i % 5 == 0) {
+  } else if (i % 5 == 0) {
     console.log(" buzz");
-  }else if (i % 3 == 0 && i % 5 == 0) {
+  } else if (i % 3 == 0 && i % 5 == 0) {
     console.log(" fizz buzz");
   } else {
     console.log(i);
   }
 }
-
 
 //Part 2: Prime Time
 
@@ -46,20 +45,32 @@ while(true){let z=true;
 //if z still true then y is a prime
 if(z){console.log("next prime number = "+y);break;}y++;}
 }
-*////stoping loop going to part3
+*/ ///stoping loop going to part3
 
 //Part 3: Feeling Loopy
 
 //givings string
-let csv="ID,Name,Occupation,Age42,Bruce,Knight,4157,Bob,Fry Cook,1963,Blaine,Quiz Master,5898,Bill,Doctor’s Assistant,26";
-let row1=" ";
-let row2=" ";
-let row3=" ";
-let row4=" ";
-let row5=" ";
-let cellnumber=0;
+let csv =
+  "ID,Name,Occupation,Age42,Bruce,Knight,4157,Bob,Fry Cook,1963,Blaine,Quiz Master,5898,Bill,Doctor’s Assistant,26";
+let row1 = " ";
+let row2 = " ";
+let row3 = " ";
+let row4 = " ";
+let row5 = " ";
+let cellnumber = 0;
 
 //loop as long length of csv is more than m, to print it, until we get to ,
-for(let m=0;m<csv.length;m++){let iscoma=csv.charAt(m);
-    if (iscoma===","){cellnumber++;}
+for (let m = 0; m < csv.length; m++) {
+  let iscoma = csv.charAt(m);
+  if (iscoma === ",") {
+    cellnumber++;
+    if (iscoma === 1) {
+      row2 = row1;
+    } else if (iscoma === 2) {
+      row3 = row1;
+    } else if (iscoma === 3) {
+      row4 = row1;
+    }
+  }
+  console.log("row1"+row1+ "raw1");
 }
