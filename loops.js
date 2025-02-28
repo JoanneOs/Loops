@@ -57,3 +57,9 @@ let row2=" ";
 let row3=" ";
 let row4=" ";
 let row5=" ";
+let cellnumber=0;
+
+//loop as long length of csv is more than m, to print it, until we get to ,
+for(let m=0;m<csv.length;m++){let iscoma=csv.charAt(m);
+    if (iscoma===","){cellnumber++;}
+}
