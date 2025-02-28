@@ -61,8 +61,10 @@ let csv ="ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Bla
 let cell=''
 
 //loop as long length of csv is more than m, to print it, until we get to ,
-for (let m = 0; m < csv.length; m++) {
-  let iscoma = csv.charAt(m);
+for (let m = 0; m < csv.length; m++) 
+    
+    {do{
+          let iscoma = csv.charAt(m);
  // while(iscoma!==" ")
     
   //if (iscoma !== '\') 
@@ -71,10 +73,18 @@ for (let m = 0; m < csv.length; m++) {
 //   }
     
 
-if (iscoma===','||iscoma==='\n') {console.log(cell);
-cell='';}
-else{cell+=iscoma;}}
-if(cell!==''){console.log(cell);}
+     if (iscoma===','||iscoma==='\n')
+          {console.log(cell);
+            cell='';}
+
+  else
+        { cell+=iscoma;}
+    
+
+
+//if(cell!=='')
+          }while(cell!=='')}
+        console.log(cell);
 
 //   //  cellnumber++;
 
