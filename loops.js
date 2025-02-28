@@ -51,7 +51,7 @@ if(z){console.log("next prime number = "+y);break;}y++;}
 
 //givings string
 
-let csv ="ID,Name,Occupation,Age\n42"//,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26";
+let csv ="ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"//,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26";
 // let row1 = " ";
 // let row2 = " ";
 // let row3 = " ";
@@ -71,11 +71,11 @@ for (let m = 0; m < csv.length; m++) {
 //   }
     
 
-if (m===','||iscoma==='\'') {console.log(cell);
+if (iscoma===','||iscoma==='\n') {console.log(cell);
 cell='';}
-else{cell+=iscoma;}
+else{cell+=iscoma;}}
 if(cell!==''){console.log(cell);}
-}
+
 //   //  cellnumber++;
 
 //     /*
