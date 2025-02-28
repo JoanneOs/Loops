@@ -71,8 +71,11 @@ for (let m = 0; m < csv.length; m++) {
 //   }
     
 
-if (m===','||c==='\'') console.log(cell);
-cell='';}esle{cell+=c;}}
+if (m===','||iscoma==='\'') {console.log(cell);
+cell='';}
+else{cell+=iscoma;}
+if(cell!==''){console.log(cell);}
+}
 //   //  cellnumber++;
 
 //     /*
@@ -99,4 +102,4 @@ cell='';}esle{cell+=c;}}
 //     row1 = row1 + csv;
 //   }
 // }
-// //console.log(row1)//,row2,row3,row4,row5)
+// //console.log(row1)//,row2,row3,row4,row5
