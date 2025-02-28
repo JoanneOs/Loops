@@ -71,11 +71,15 @@ for (let m = 0; m < csv.length; m++) {
     } else if (iscoma === 3) {
       row4 = row1;
     }
-  }
+  
 //console.log("row1"+row1+ "raw1");  // didn;t print
 
 row1=""; //restart new row
 }else if(csv==='/n'){row5=row1;
-    console.log(row1,row2,row3,row4,row5)
+ //   console.log(row1,row2,row3,row4,row5)
     row2=row3=row4=row5;//to reset
-}
+    iscoma=0;
+    row1='';//to clear
+
+}else{row1=row1+csv;}}
+console.log(row1,row2,row3,row4,row5)
