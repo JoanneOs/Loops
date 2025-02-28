@@ -26,10 +26,21 @@ for (let i = 1; i <= 100; i++) {
 let x=4; //we can change this input
 let y=x+1;
 
+
+console.log("Starting number (n):", x);
+console.log("Searching for the next prime number...");
+
 //false is prime number//
 //wile number is not fulse
-while(true){let z=true,
-    for (let r=2;r<y,r++){if(y%i==0){z=false;
+
+//Context: It searches for the next prime number starting from a given n.
+//Arbitrary number n: The variable x is declared as n, and the script searches for the next prime starting from x + 1.
+
+while(true){let z=true;
+    for(let r=2;r<y;r++){if(y%r===0){z=false;
         //need break
-    }}
+        break;
+    }
+//if z still true then y is a prime
+if(z){console.log("next prime number = "+y);break;}y++;}
 }
